@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0805.0415                               -->
+<workbook original-version='18.1' source-build='2023.2.1 (20232.23.0805.0415)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='airlines (1)' inline='true' name='federated.127uf6q0xgs5xo1161lqn1k7glqf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='airlines (1)' name='textscan.0wf5xvn1qt8u9x177vhpf0un7jjc'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='G:/My Drive/airlines (1).csv' dataRefreshTime='' directory='G:/My Drive' filename='C:/Users/ELCOT/AppData/Local/Temp/TableauTemp/1fydt1p0zq95q1161wnqo0m1cnse/airlines (1).csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <relation connection='textscan.0wf5xvn1qt8u9x177vhpf0un7jjc' name='airlines (1).csv' table='[airlines (1)#csv$]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:I6163:no:A1:I6163:1' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='index' ordinal='0' />
+              <column datatype='integer' name='Airline ID' ordinal='1' />
+              <column datatype='string' name='Name' ordinal='2' />
+              <column datatype='string' name='Alias' ordinal='3' />
+              <column datatype='string' name='IATA' ordinal='4' />
+              <column datatype='string' name='ICAO' ordinal='5' />
+              <column datatype='string' name='Callsign' ordinal='6' />
+              <column datatype='string' name='Country' ordinal='7' />
+              <column datatype='string' name='Active' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0wf5xvn1qt8u9x177vhpf0un7jjc' name='airplanes.csv' table='[airplanes#csv$]' type='table'>
+            <columns gridOrigin='A1:D247:no:A1:D247:1'>
+              <column datatype='integer' name='index' ordinal='0' />
+              <column datatype='string' name='Name' ordinal='1' />
+              <column datatype='string' name='IATA code' ordinal='2' />
+              <column datatype='string' name='ICAO code' ordinal='3' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+          <relation connection='textscan.0wf5xvn1qt8u9x177vhpf0un7jjc' name='airlines (1).csv' table='[airlines (1)#csv$]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:I6163:no:A1:I6163:1' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='index' ordinal='0' />
+              <column datatype='integer' name='Airline ID' ordinal='1' />
+              <column datatype='string' name='Name' ordinal='2' />
+              <column datatype='string' name='Alias' ordinal='3' />
+              <column datatype='string' name='IATA' ordinal='4' />
+              <column datatype='string' name='ICAO' ordinal='5' />
+              <column datatype='string' name='Callsign' ordinal='6' />
+              <column datatype='string' name='Country' ordinal='7' />
+              <column datatype='string' name='Active' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0wf5xvn1qt8u9x177vhpf0un7jjc' name='airplanes.csv' table='[airplanes#csv$]' type='table'>
+            <columns gridOrigin='A1:D247:no:A1:D247:1'>
+              <column datatype='integer' name='index' ordinal='0' />
+              <column datatype='string' name='Name' ordinal='1' />
+              <column datatype='string' name='IATA code' ordinal='2' />
+              <column datatype='string' name='ICAO code' ordinal='3' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[airlines (1).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I6163:no:A1:I6163:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>12378</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[airlines (1).csv]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airlines (1).csv_5D94B54DAD6C4C018584DD061BAE3E2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Airline ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Airline ID]</local-name>
+            <parent-name>[airlines (1).csv]</parent-name>
+            <remote-alias>Airline ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airlines (1).csv_5D94B54DAD6C4C018584DD061BAE3E2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[airlines (1).csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airlines (1).csv_5D94B54DAD6C4C018584DD061BAE3E2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alias</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Alias]</local-name>
+            <parent-name>[airlines (1).csv]</parent-name>
+            <remote-alias>Alias</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airlines (1).csv_5D94B54DAD6C4C018584DD061BAE3E2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IATA</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[IATA]</local-name>
+            <parent-name>[airlines (1).csv]</parent-name>
+            <remote-alias>IATA</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airlines (1).csv_5D94B54DAD6C4C018584DD061BAE3E2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ICAO</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ICAO]</local-name>
+            <parent-name>[airlines (1).csv]</parent-name>
+            <remote-alias>ICAO</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airlines (1).csv_5D94B54DAD6C4C018584DD061BAE3E2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Callsign</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Callsign]</local-name>
+            <parent-name>[airlines (1).csv]</parent-name>
+            <remote-alias>Callsign</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airlines (1).csv_5D94B54DAD6C4C018584DD061BAE3E2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[airlines (1).csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airlines (1).csv_5D94B54DAD6C4C018584DD061BAE3E2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Active</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Active]</local-name>
+            <parent-name>[airlines (1).csv]</parent-name>
+            <remote-alias>Active</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[airlines (1).csv_5D94B54DAD6C4C018584DD061BAE3E2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Iata' datatype='string' name='[IATA]' role='dimension' semantic-role='[Airport].[Name]' type='nominal' />
+      <column caption='Icao' datatype='string' name='[ICAO]' role='dimension' semantic-role='[Airport].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='airlines (1).csv' datatype='table' name='[__tableau_internal_object_id__].[airlines (1).csv_5D94B54DAD6C4C018584DD061BAE3E2E]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Zimbabwe&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='airlines (1).csv' id='airlines (1).csv_5D94B54DAD6C4C018584DD061BAE3E2E'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <relation connection='textscan.0wf5xvn1qt8u9x177vhpf0un7jjc' name='airlines (1).csv' table='[airlines (1)#csv$]' type='table'>
+                  <columns character-set='UTF-8' gridOrigin='A1:I6163:no:A1:I6163:1' header='yes' locale='en_IN' separator=','>
+                    <column datatype='integer' name='index' ordinal='0' />
+                    <column datatype='integer' name='Airline ID' ordinal='1' />
+                    <column datatype='string' name='Name' ordinal='2' />
+                    <column datatype='string' name='Alias' ordinal='3' />
+                    <column datatype='string' name='IATA' ordinal='4' />
+                    <column datatype='string' name='ICAO' ordinal='5' />
+                    <column datatype='string' name='Callsign' ordinal='6' />
+                    <column datatype='string' name='Country' ordinal='7' />
+                    <column datatype='string' name='Active' ordinal='8' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0wf5xvn1qt8u9x177vhpf0un7jjc' name='airplanes.csv' table='[airplanes#csv$]' type='table'>
+                  <columns gridOrigin='A1:D247:no:A1:D247:1'>
+                    <column datatype='integer' name='index' ordinal='0' />
+                    <column datatype='string' name='Name' ordinal='1' />
+                    <column datatype='string' name='IATA code' ordinal='2' />
+                    <column datatype='string' name='ICAO code' ordinal='3' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2193922996520996' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4523B5D0-5666-4739-984D-52F11A8ED8FB}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.127uf6q0xgs5xo1161lqn1k7glqf].[:Measure Names]</field>
+            <field>[federated.127uf6q0xgs5xo1161lqn1k7glqf].[none:Alias:nk]</field>
+            <field>[federated.127uf6q0xgs5xo1161lqn1k7glqf].[none:Country:nk]</field>
+            <field>[federated.127uf6q0xgs5xo1161lqn1k7glqf].[none:IATA:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E6C3A4D7-215E-4CBC-85B3-8A98176856EE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
